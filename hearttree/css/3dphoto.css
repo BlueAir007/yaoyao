@@ -1,0 +1,76 @@
+#heart {
+    display: none;
+    position: absolute;
+    left: 90%;
+    top: 10%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    transform-style: preserve-3d;
+    /*3D空间*/
+    animation: rot 15s linear infinite;
+    /*CSS3自定义动画：名称，时间，速度曲线 无限重复*/
+}
+
+@keyframes rot {
+    from {
+        transform: rotateX(0deg) rotateY(0deg)
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg)
+    }
+}
+
+.cube {
+    position: absolute;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    transform-style: preserve-3d;
+    transform: translateZ(23px);
+}
+
+.cube div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+}
+
+.cube div:nth-child(1) {
+    left: 0;
+    top: -120px;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+}
+
+.cube div:nth-child(2) {
+    left: 0;
+    top: 120px;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+}
+
+.cube div:nth-child(3) {
+    left: -120px;
+    top: 0;
+    transform-origin: right;
+    transform: rotateY(-90deg);
+}
+
+.cube div:nth-child(4) {
+    left: 120px;
+    top: 0;
+    transform-origin: left;
+    transform: rotateY(90deg);
+}
+
+.cube div:nth-child(5) {
+    left: 0;
+    top: 0;
+}
+
+.cube div:nth-child(6) {
+    left: 0;
+    top: 0;
+    transform: translateZ(-120px);
+}
