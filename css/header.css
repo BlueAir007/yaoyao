@@ -106,7 +106,7 @@
     position: relative;
     z-index: 800;
     width: 100%;
-    padding: 100px 60px;
+    padding: 5% 10%;
 }
 
 .panel-main__content {
@@ -341,8 +341,9 @@
         max-width: none;
     }
     .panel-main__inner {
-        display: table-cell;
-        padding: 60px 10%;
+        display: table;
+        position: relative;
+        padding: 6% 10%;
     }
     .panel-cover__description {
         display: block;
