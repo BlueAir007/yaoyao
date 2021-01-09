@@ -21,6 +21,10 @@ body {
     width: 550px;
 }
 
+#logo :hover {
+    cursor: pointer;
+}
+
 #text2 {
     position: absolute;
     top: 60%;
